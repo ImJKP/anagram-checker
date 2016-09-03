@@ -3,10 +3,10 @@ body { background-color: #592941; }
 div#main_container {
   width: 50%;
   background-color: #ede5a6;
-  margin: 25% auto;
+  margin: 25% auto 0 auto;
   padding: 1em;
   text-align:center; 
-  border-radius: 10px 10px 10px 10px; 
+  border-radius: 10px; 
   border: 1px 
   solid #498467; 
   }
