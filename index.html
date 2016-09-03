@@ -18,22 +18,25 @@
       function checkAnagrams() {
           // Check if two strings are anagrams.
       
-        var first_string = prompt("What's the first string?");
-        var second_string = prompt("What's the second string?");
+        var firstString = prompt("What's the first string?");
+        var secondString = prompt("What's the second string?");
       
+        if (firstString == secondString) { alert("Those strings are the same!");
+        } else {
       
-        var simplify = function(string) {
-          return string.toLowerCase().split('').sort()
-        }
+          var simplify = function(string) {
+            return string.toLowerCase().split('').sort().join()
+          }
       
-        var first_blob = simplify(first_string);
-        var second_blob = simplify(second_string);
+          var firstBlob = simplify(firstString);
+          var secondBlob = simplify(secondString);
       
-        if (first_blob === second_blob) {
-            alert("Those strings are anagrams!")
-          } else {
-            alert("Those strings are NOT anagrams!")
-        }
+          if (firstBlob == secondBlob) {
+              alert("Those strings are anagrams!")
+            } else {
+              alert("Those strings are NOT anagrams!")
+          }
+        }  
       }
     </script>
   
