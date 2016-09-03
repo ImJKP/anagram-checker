@@ -2,43 +2,15 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>Anagram-checker by ImJKP</title>
+    <title>Anagram CheckerP</title>
+    <script type="text/javascript" src="javascripts/main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
+  
   <body>
     <h1>Let's check some anagrams!</h1>
     
     <button onclick="checkAnagrams()">Let's do it!</button>
-    
-    <script>
-      function checkAnagrams() {
-          // Check if two strings are anagrams.
-      
-        var firstString = prompt("What's the first string?");
-        var secondString = prompt("What's the second string?");
-      
-        if (firstString == secondString) { alert("Those strings are the same!");
-        } else {
-      
-          var simplify = function(string) {
-            return string.toLowerCase().split('').sort().join()
-          }
-      
-          var firstBlob = simplify(firstString);
-          var secondBlob = simplify(secondString);
-      
-          if (firstBlob == secondBlob) {
-              alert("Those strings are anagrams!")
-            } else {
-              alert("Those strings are NOT anagrams!")
-          }
-        }  
-      }
-    </script>
   
   </body>
 </html>
